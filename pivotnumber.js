@@ -8,12 +8,12 @@ var pivotIndex = function (nums) {
 
   for (let j = 0; j < nums.length; j++) {
     if (totalsum - leftsum - nums[j] === leftsum) {
-      console.log(j);
+      return j;
     }
     leftsum += nums[j];
   }
-  console.log(-1);
+  return -1;
       
 
 };
-pivotIndex([1, 7, 3, 6, 5, 6]);
+console.log(pivotIndex([1, 7, 3, 6, 5, 6]));
