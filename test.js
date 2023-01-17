@@ -11,3 +11,15 @@ var runningSum = function (nums) {
 
 };
 runningSum([1, 2, 3]);
+
+
+
+
+// using Map 
+var runningSum = function (nums) {
+let ans = 0;
+  
+  ans = nums.map(x => ans += x)
+  console.log(ans);
+};
+runningSum([1, 2, 3]);
