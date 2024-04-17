@@ -5,10 +5,6 @@ var runningSum = function (nums) {
 
     ans[i] = nums[i] + ans[i - 1];
   return ans;
-
-
-
-
 };
 runningSum([1, 2, 3]);
 
